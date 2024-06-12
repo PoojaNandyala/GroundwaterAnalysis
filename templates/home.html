@@ -1,1 +1,48 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="gwl" placeholder="gwl" required="required" /><br>
+    	<input type="text" name="pH" placeholder="pH" required="required" /><br>
+        <input type="text" name="EC" placeholder="EC" required="required" /><br>
+        <input type="text" name="TDS" placeholder="TDS" required="required" /><br>
+        <input type="text" name="CO3" placeholder="CO3" required="required" /><br>
+        <input type="text" name="HCO3" placeholder="HCO3" required="required" /><br>
+        <input type="text" name="Cl" placeholder="Cl" required="required" /><br>
+        <input type="text" name="F" placeholder="F" required="required" /><br>
+        <input type="text" name="NO3" placeholder="NO3" required="required" /><br>
+        <input type="text" name="SO4" placeholder="SO4" required="required" /><br>
+        <input type="text" name="Na" placeholder="Na" required="required" /><br>
+        <input type="text" name="K" placeholder="K" required="required" /><br>
+        <input type="text" name="Ca" placeholder="Ca" required="required" /><br>
+        <input type="text" name="Mg" placeholder="Mg" required="required" /><br>
+        <input type="text" name="TH" placeholder="TH" required="required" /><br>
+        <input type="text" name="SAR" placeholder="SAR" required="required" /><br>       
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
