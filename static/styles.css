@@ -1,0 +1,72 @@
+/* Resetting default margin and padding */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Setting background color and font for body */
+  body {
+    font-family: 'Arimo', sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    background-image:url('Borewater.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+  
+  /* Styling the h1 element */
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Styling the form container */
+  .login {
+    width: 300px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.5);;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Styling form inputs */
+  .login input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styling submit button */
+  .login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Styling submit button on hover */
+  .login button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling prediction text */
+  .prediction {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    color: #0c0c0c;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #ccc;
+  }
+  
